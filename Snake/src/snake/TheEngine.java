@@ -39,7 +39,8 @@ import java.awt.*;
 
     private TheEngine (Canvas canvas){
         
-      this.canvas = canvas;  
+      this.canvas = canvas; 
+      GameBoard GB = new GameBoard();
     }
     
     
@@ -76,10 +77,11 @@ import java.awt.*;
 
     }
  
-        private void render(Graphics2D g){
-            
+        private void render(Graphics2D g){         
             //TODO
         }
+
+    
  
  }
     
