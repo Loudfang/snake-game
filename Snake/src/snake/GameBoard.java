@@ -16,6 +16,10 @@ public class GameBoard {
     public static final int TILE_SIZE = 25;
     public static final int MAP_SIZE = 20;
     private tiletype[] tiles;
+
+    tiletype getTile(int x, int y) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public static enum tiletype{
         
