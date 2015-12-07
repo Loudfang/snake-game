@@ -16,7 +16,9 @@ import java.awt.*;
 
  public class TheEngine {
      
-     private Canvas canvas;
+    private GameBoard board; 
+    private TheSnake snake; 
+    private Canvas canvas;
     private static final int UPDATES_PER_SECOND = 10;
     
     
@@ -40,7 +42,7 @@ import java.awt.*;
     private TheEngine (Canvas canvas){
         
       this.canvas = canvas; 
-      GameBoard GB = new GameBoard();
+      snake = new TheSnake(board);
     }
     
     
@@ -77,11 +79,10 @@ import java.awt.*;
 
     }
  
-        private void render(Graphics2D g){         
+        private void render(Graphics2D g){
+            
             //TODO
         }
-
-    
  
  }
     
